@@ -43,4 +43,4 @@ Database is not needed for this app, so we will just skip migrations
 
 Then run the `rails server` and go to `http://localhost:3000` to make sure everything is correct. You should see the home page with list of recipes with images. Enjoy exploring :)
 
-
+![image](https://github.com/nimeshnikum/marley_spoon_coding_challenge/blob/master/public/Recipes%20List.png)
