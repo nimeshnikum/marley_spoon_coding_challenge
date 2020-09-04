@@ -1,0 +1,17 @@
+=< link_to 'Back', recipes_path
+
+h3
+  strong
+    = @recipe.title
+  - if @recipe.chef
+    p4.chef = ' by ' + @recipe.chef.try(:name)
+- if @recipe.tags
+  p
+    strong Tags: 
+    = @recipe.tags.map(&:name).join(', ')
+p
+  text-monospace = @recipe.description
+p
+  = image_tag @recipe.photo.url
+
+=< link_to 'Back', recipes_path
